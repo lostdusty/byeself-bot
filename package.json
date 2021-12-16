@@ -1,0 +1,26 @@
+{
+  "name": "byeself-bot",
+  "version": "1.0.0",
+  "main": "source/index.ts",
+  "repository": "git@github.com:mauriciobraz/byeself-bot.git",
+  "author": "Maurício Braz Gonçalves <unbluew.braz@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "build": "tsc",
+    "dev": "tsnd --clear --rs source/index.ts"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  }
+}
